@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEspinosaIE
 {
-    public partial class Proveedores : Form
+    public partial class frmSistemaGestion : Form
     {
-        public Proveedores()
+        public frmSistemaGestion()
         {
             InitializeComponent();
         }
