@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
-            this.btnIniciar = new System.Windows.Forms.Button();
+            this.Reloj = new System.Windows.Forms.Timer(this.components);
+            this.BarraDeCarga = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
-            // btnIniciar
+            // Reloj
             // 
-            this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(249, 375);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(146, 49);
-            this.btnIniciar.TabIndex = 0;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = true;
-            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            this.Reloj.Tick += new System.EventHandler(this.Reloj_Tick);
+            // 
+            // BarraDeCarga
+            // 
+            this.BarraDeCarga.Location = new System.Drawing.Point(179, 394);
+            this.BarraDeCarga.Name = "BarraDeCarga";
+            this.BarraDeCarga.Size = new System.Drawing.Size(275, 23);
+            this.BarraDeCarga.TabIndex = 0;
             // 
             // frmPrincipal
             // 
@@ -50,7 +52,7 @@
             this.BackgroundImage = global::pryEspinosaIE.Properties.Resources.logo_seguros;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(636, 469);
-            this.Controls.Add(this.btnIniciar);
+            this.Controls.Add(this.BarraDeCarga);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
@@ -63,7 +65,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Timer Reloj;
+        private System.Windows.Forms.ProgressBar BarraDeCarga;
     }
 }
 

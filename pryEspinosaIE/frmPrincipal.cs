@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;//Manejo de Archivos/Librerias
 
 namespace pryEspinosaIE
 {
@@ -27,6 +28,23 @@ namespace pryEspinosaIE
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = Properties.Resources.logo_seguros;
+            Reloj.Enabled = true;
+        }
+
+        private void Reloj_Tick(object sender, EventArgs e)
+        {
+            if (BarraDeCarga.Value == 100)
+            {
+                //Apagado de Reloj
+                Reloj.Enabled = false;
+                frmSistemaGestion ventana = new frmSistemaGestion();
+                ventana.ShowDialog();
+                this.Hide();//Oculta la frmPrincipal
+            }
+            else
+            {
+                BarraDeCarga.Value += 5;//Incrementa la carga de reloj
+            }
         }
     }
 }
