@@ -59,13 +59,14 @@
             // registroDeProveedoresToolStripMenuItem
             // 
             this.registroDeProveedoresToolStripMenuItem.Name = "registroDeProveedoresToolStripMenuItem";
-            this.registroDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.registroDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.registroDeProveedoresToolStripMenuItem.Text = "Registro de Proveedores";
+            this.registroDeProveedoresToolStripMenuItem.Click += new System.EventHandler(this.registroDeProveedoresToolStripMenuItem_Click);
             // 
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.proveedoresToolStripMenuItem.Text = "Proveedores...";
             // 
             // listaDePreciosDeProveedoresToolStripMenuItem
