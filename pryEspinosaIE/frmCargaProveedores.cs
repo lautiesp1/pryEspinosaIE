@@ -82,5 +82,15 @@ namespace pryEspinosaIE
 
             MessageBox.Show("Registro realizado");
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            dgvDatos.Rows.Clear();
+        }
+
+        private void dgvDatos_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
