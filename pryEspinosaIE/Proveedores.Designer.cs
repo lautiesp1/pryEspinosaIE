@@ -74,6 +74,7 @@
             this.listaDePreciosDeProveedoresToolStripMenuItem.Name = "listaDePreciosDeProveedoresToolStripMenuItem";
             this.listaDePreciosDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.listaDePreciosDeProveedoresToolStripMenuItem.Text = "Lista de Precios de Proveedores";
+            this.listaDePreciosDeProveedoresToolStripMenuItem.Click += new System.EventHandler(this.listaDePreciosDeProveedoresToolStripMenuItem_Click);
             // 
             // frmSistemaGestion
             // 
