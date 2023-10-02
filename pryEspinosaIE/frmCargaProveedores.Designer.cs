@@ -37,6 +37,15 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.txtEntidad = new System.Windows.Forms.TextBox();
+            this.txtApertura = new System.Windows.Forms.TextBox();
+            this.txtExpediente = new System.Windows.Forms.TextBox();
+            this.txtJuzg = new System.Windows.Forms.TextBox();
+            this.txtJurisdiccion = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtLiquidador = new System.Windows.Forms.TextBox();
+            this.btnGrabar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,16 +106,93 @@
             this.Column8.HeaderText = "Liquidador Responsable";
             this.Column8.Name = "Column8";
             // 
+            // txtNumero
+            // 
+            this.txtNumero.Location = new System.Drawing.Point(21, 47);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero.TabIndex = 1;
+            // 
+            // txtEntidad
+            // 
+            this.txtEntidad.Location = new System.Drawing.Point(157, 48);
+            this.txtEntidad.Name = "txtEntidad";
+            this.txtEntidad.Size = new System.Drawing.Size(100, 20);
+            this.txtEntidad.TabIndex = 2;
+            // 
+            // txtApertura
+            // 
+            this.txtApertura.Location = new System.Drawing.Point(310, 48);
+            this.txtApertura.Name = "txtApertura";
+            this.txtApertura.Size = new System.Drawing.Size(100, 20);
+            this.txtApertura.TabIndex = 3;
+            // 
+            // txtExpediente
+            // 
+            this.txtExpediente.Location = new System.Drawing.Point(453, 48);
+            this.txtExpediente.Name = "txtExpediente";
+            this.txtExpediente.Size = new System.Drawing.Size(100, 20);
+            this.txtExpediente.TabIndex = 4;
+            // 
+            // txtJuzg
+            // 
+            this.txtJuzg.Location = new System.Drawing.Point(21, 141);
+            this.txtJuzg.Name = "txtJuzg";
+            this.txtJuzg.Size = new System.Drawing.Size(100, 20);
+            this.txtJuzg.TabIndex = 5;
+            // 
+            // txtJurisdiccion
+            // 
+            this.txtJurisdiccion.Location = new System.Drawing.Point(157, 141);
+            this.txtJurisdiccion.Name = "txtJurisdiccion";
+            this.txtJurisdiccion.Size = new System.Drawing.Size(100, 20);
+            this.txtJurisdiccion.TabIndex = 6;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(310, 141);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(100, 20);
+            this.txtDireccion.TabIndex = 7;
+            // 
+            // txtLiquidador
+            // 
+            this.txtLiquidador.Location = new System.Drawing.Point(453, 141);
+            this.txtLiquidador.Name = "txtLiquidador";
+            this.txtLiquidador.Size = new System.Drawing.Size(100, 20);
+            this.txtLiquidador.TabIndex = 8;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Location = new System.Drawing.Point(557, 443);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(98, 29);
+            this.btnGrabar.TabIndex = 9;
+            this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
             // frmCargaProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 450);
+            this.ClientSize = new System.Drawing.Size(875, 496);
+            this.Controls.Add(this.btnGrabar);
+            this.Controls.Add(this.txtLiquidador);
+            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.txtJurisdiccion);
+            this.Controls.Add(this.txtJuzg);
+            this.Controls.Add(this.txtExpediente);
+            this.Controls.Add(this.txtApertura);
+            this.Controls.Add(this.txtEntidad);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.dgvDatos);
             this.Name = "frmCargaProveedores";
             this.Text = "frmCargaProveedores";
+            this.Load += new System.EventHandler(this.frmCargaProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -121,5 +207,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.TextBox txtEntidad;
+        private System.Windows.Forms.TextBox txtApertura;
+        private System.Windows.Forms.TextBox txtExpediente;
+        private System.Windows.Forms.TextBox txtJuzg;
+        private System.Windows.Forms.TextBox txtJurisdiccion;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtLiquidador;
+        private System.Windows.Forms.Button btnGrabar;
     }
 }
