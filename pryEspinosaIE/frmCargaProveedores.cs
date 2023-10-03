@@ -57,10 +57,10 @@ namespace pryEspinosaIE
             txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtExpediente.Text = dgvDatos.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
-            txtJurisdiccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
+            cmbJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
+            cmbJurisdicción.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
             txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();
-            txtLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[8].Value.ToString();
+            cmbLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[8].Value.ToString();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -76,7 +76,7 @@ namespace pryEspinosaIE
             objetoEscribeArchivo.WriteLine(txtApertura.Text + ";" +
                 txtEntidad.Text + ";" + txtExpediente.Text + ";" +
                 txtNumero.Text + ";" + txtDireccion.Text + ";" +
-                txtJuzg.Text + ";" + txtJurisdiccion.Text + ";" + txtLiquidador.Text);
+                cmbJuzg.Text + ";" + cmbJurisdicción.Text + ";" + cmbLiquidador.Text);
 
             objetoEscribeArchivo.Close();
 
@@ -94,6 +94,16 @@ namespace pryEspinosaIE
         }
 
         private void txtExpediente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtJuzg_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -42,10 +42,7 @@
             this.txtEntidad = new System.Windows.Forms.TextBox();
             this.txtApertura = new System.Windows.Forms.TextBox();
             this.txtExpediente = new System.Windows.Forms.TextBox();
-            this.txtJuzg = new System.Windows.Forms.TextBox();
-            this.txtJurisdiccion = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtLiquidador = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.lblDatos = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -57,6 +54,9 @@
             this.lblJurisdicción = new System.Windows.Forms.Label();
             this.lblDirección = new System.Windows.Forms.Label();
             this.lblLiquidador = new System.Windows.Forms.Label();
+            this.cmbJuzg = new System.Windows.Forms.ComboBox();
+            this.cmbJurisdicción = new System.Windows.Forms.ComboBox();
+            this.cmbLiquidador = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,6 +77,7 @@
             this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDatos.Size = new System.Drawing.Size(683, 187);
             this.dgvDatos.TabIndex = 0;
+            this.dgvDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellContentClick);
             this.dgvDatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellDoubleClick_1);
             // 
             // Column1
@@ -148,33 +149,12 @@
             this.txtExpediente.TabIndex = 4;
             this.txtExpediente.TextChanged += new System.EventHandler(this.txtExpediente_TextChanged);
             // 
-            // txtJuzg
-            // 
-            this.txtJuzg.Location = new System.Drawing.Point(398, 9);
-            this.txtJuzg.Name = "txtJuzg";
-            this.txtJuzg.Size = new System.Drawing.Size(100, 20);
-            this.txtJuzg.TabIndex = 5;
-            // 
-            // txtJurisdiccion
-            // 
-            this.txtJurisdiccion.Location = new System.Drawing.Point(398, 54);
-            this.txtJurisdiccion.Name = "txtJurisdiccion";
-            this.txtJurisdiccion.Size = new System.Drawing.Size(100, 20);
-            this.txtJurisdiccion.TabIndex = 6;
-            // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(398, 102);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(100, 20);
             this.txtDireccion.TabIndex = 7;
-            // 
-            // txtLiquidador
-            // 
-            this.txtLiquidador.Location = new System.Drawing.Point(398, 145);
-            this.txtLiquidador.Name = "txtLiquidador";
-            this.txtLiquidador.Size = new System.Drawing.Size(100, 20);
-            this.txtLiquidador.TabIndex = 8;
             // 
             // btnGrabar
             // 
@@ -287,11 +267,38 @@
             this.lblLiquidador.Text = "Liquidador";
             this.lblLiquidador.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // cmbJuzg
+            // 
+            this.cmbJuzg.FormattingEnabled = true;
+            this.cmbJuzg.Location = new System.Drawing.Point(398, 9);
+            this.cmbJuzg.Name = "cmbJuzg";
+            this.cmbJuzg.Size = new System.Drawing.Size(100, 21);
+            this.cmbJuzg.TabIndex = 20;
+            // 
+            // cmbJurisdicción
+            // 
+            this.cmbJurisdicción.FormattingEnabled = true;
+            this.cmbJurisdicción.Location = new System.Drawing.Point(398, 51);
+            this.cmbJurisdicción.Name = "cmbJurisdicción";
+            this.cmbJurisdicción.Size = new System.Drawing.Size(100, 21);
+            this.cmbJurisdicción.TabIndex = 21;
+            // 
+            // cmbLiquidador
+            // 
+            this.cmbLiquidador.FormattingEnabled = true;
+            this.cmbLiquidador.Location = new System.Drawing.Point(398, 145);
+            this.cmbLiquidador.Name = "cmbLiquidador";
+            this.cmbLiquidador.Size = new System.Drawing.Size(100, 21);
+            this.cmbLiquidador.TabIndex = 22;
+            // 
             // frmCargaProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 496);
+            this.Controls.Add(this.cmbLiquidador);
+            this.Controls.Add(this.cmbJurisdicción);
+            this.Controls.Add(this.cmbJuzg);
             this.Controls.Add(this.lblLiquidador);
             this.Controls.Add(this.lblDirección);
             this.Controls.Add(this.lblJurisdicción);
@@ -303,10 +310,7 @@
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.lblDatos);
             this.Controls.Add(this.btnGrabar);
-            this.Controls.Add(this.txtLiquidador);
             this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.txtJurisdiccion);
-            this.Controls.Add(this.txtJuzg);
             this.Controls.Add(this.txtExpediente);
             this.Controls.Add(this.txtApertura);
             this.Controls.Add(this.txtEntidad);
@@ -329,10 +333,7 @@
         private System.Windows.Forms.TextBox txtEntidad;
         private System.Windows.Forms.TextBox txtApertura;
         private System.Windows.Forms.TextBox txtExpediente;
-        private System.Windows.Forms.TextBox txtJuzg;
-        private System.Windows.Forms.TextBox txtJurisdiccion;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtLiquidador;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -352,5 +353,8 @@
         private System.Windows.Forms.Label lblJurisdicción;
         private System.Windows.Forms.Label lblDirección;
         private System.Windows.Forms.Label lblLiquidador;
+        private System.Windows.Forms.ComboBox cmbJuzg;
+        private System.Windows.Forms.ComboBox cmbJurisdicción;
+        private System.Windows.Forms.ComboBox cmbLiquidador;
     }
 }
