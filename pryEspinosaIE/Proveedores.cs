@@ -28,5 +28,10 @@ namespace pryEspinosaIE
             frmRegistroProveedorSeguro frmRegistroProveedores = new frmRegistroProveedorSeguro();
             frmRegistroProveedores.ShowDialog();
         }
+
+        private void frmSistemaGestion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

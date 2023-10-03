@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistroProveedorSeguro));
             this.lblContenido = new System.Windows.Forms.Label();
             this.btnNivel2 = new System.Windows.Forms.Button();
             this.btnTreeNivel1 = new System.Windows.Forms.Button();
@@ -78,6 +79,7 @@
             this.Controls.Add(this.btnNivel2);
             this.Controls.Add(this.btnTreeNivel1);
             this.Controls.Add(this.treeView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistroProveedorSeguro";
             this.Text = "frmRegistroProveedorSeguro";
             this.ResumeLayout(false);

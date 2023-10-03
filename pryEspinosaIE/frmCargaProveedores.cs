@@ -75,8 +75,8 @@ namespace pryEspinosaIE
 
             objetoEscribeArchivo.WriteLine(txtApertura.Text + ";" +
                 txtEntidad.Text + ";" + txtExpediente.Text + ";" +
-                txtNumero.Text + ";" + txtDireccion + ";" +
-                txtJuzg + ";" + txtJurisdiccion + ";" + txtLiquidador);
+                txtNumero.Text + ";" + txtDireccion.Text + ";" +
+                txtJuzg.Text + ";" + txtJurisdiccion.Text + ";" + txtLiquidador.Text);
 
             objetoEscribeArchivo.Close();
 
@@ -89,6 +89,11 @@ namespace pryEspinosaIE
         }
 
         private void dgvDatos_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtExpediente_TextChanged(object sender, EventArgs e)
         {
 
         }
