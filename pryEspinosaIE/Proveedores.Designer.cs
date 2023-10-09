@@ -33,7 +33,7 @@
             this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listaDePreciosDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carpetasDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,30 +52,31 @@
             this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroDeProveedoresToolStripMenuItem,
             this.proveedoresToolStripMenuItem,
-            this.listaDePreciosDeProveedoresToolStripMenuItem});
+            this.carpetasDeProveedoresToolStripMenuItem});
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
             this.gestionToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.gestionToolStripMenuItem.Text = "Gestion";
+            this.gestionToolStripMenuItem.Click += new System.EventHandler(this.gestionToolStripMenuItem_Click);
             // 
             // registroDeProveedoresToolStripMenuItem
             // 
             this.registroDeProveedoresToolStripMenuItem.Name = "registroDeProveedoresToolStripMenuItem";
-            this.registroDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.registroDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.registroDeProveedoresToolStripMenuItem.Text = "Registro de Proveedores";
             this.registroDeProveedoresToolStripMenuItem.Click += new System.EventHandler(this.registroDeProveedoresToolStripMenuItem_Click);
             // 
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.proveedoresToolStripMenuItem.Text = "Proveedores...";
             // 
-            // listaDePreciosDeProveedoresToolStripMenuItem
+            // carpetasDeProveedoresToolStripMenuItem
             // 
-            this.listaDePreciosDeProveedoresToolStripMenuItem.Name = "listaDePreciosDeProveedoresToolStripMenuItem";
-            this.listaDePreciosDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.listaDePreciosDeProveedoresToolStripMenuItem.Text = "Lista de Precios de Proveedores";
-            this.listaDePreciosDeProveedoresToolStripMenuItem.Click += new System.EventHandler(this.listaDePreciosDeProveedoresToolStripMenuItem_Click);
+            this.carpetasDeProveedoresToolStripMenuItem.Name = "carpetasDeProveedoresToolStripMenuItem";
+            this.carpetasDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.carpetasDeProveedoresToolStripMenuItem.Text = "Carpetas De Proveedores";
+            this.carpetasDeProveedoresToolStripMenuItem.Click += new System.EventHandler(this.carpetasDeProveedoresToolStripMenuItem_Click);
             // 
             // frmSistemaGestion
             // 
@@ -101,6 +102,6 @@
         private System.Windows.Forms.ToolStripMenuItem gestionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroDeProveedoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listaDePreciosDeProveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem carpetasDeProveedoresToolStripMenuItem;
     }
 }

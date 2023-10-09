@@ -23,13 +23,21 @@ namespace pryEspinosaIE
             frmCargaProveedores.ShowDialog();
         }
 
-        private void listaDePreciosDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmRegistroProveedorSeguro frmRegistroProveedores = new frmRegistroProveedorSeguro();
-            frmRegistroProveedores.ShowDialog();
-        }
+ 
 
         private void frmSistemaGestion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void carpetasDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCarpetaDeProveedores frmCarpetaDeProveedores = new frmCarpetaDeProveedores();
+            frmCarpetaDeProveedores.ShowDialog();
+                
+        }
+
+        private void gestionToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
