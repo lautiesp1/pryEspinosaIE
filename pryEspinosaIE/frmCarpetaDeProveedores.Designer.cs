@@ -30,7 +30,6 @@
         {
             this.lblContenido = new System.Windows.Forms.Label();
             this.btnNivel2 = new System.Windows.Forms.Button();
-            this.btnTreeNivel1 = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
@@ -49,19 +48,9 @@
             this.btnNivel2.Name = "btnNivel2";
             this.btnNivel2.Size = new System.Drawing.Size(174, 23);
             this.btnNivel2.TabIndex = 7;
-            this.btnNivel2.Text = "Nivel 2 tree";
+            this.btnNivel2.Text = "Mostrar Carpetas";
             this.btnNivel2.UseVisualStyleBackColor = true;
             this.btnNivel2.Click += new System.EventHandler(this.btnNivel2_Click_1);
-            // 
-            // btnTreeNivel1
-            // 
-            this.btnTreeNivel1.Location = new System.Drawing.Point(66, 13);
-            this.btnTreeNivel1.Name = "btnTreeNivel1";
-            this.btnTreeNivel1.Size = new System.Drawing.Size(174, 23);
-            this.btnTreeNivel1.TabIndex = 6;
-            this.btnTreeNivel1.Text = "Nivel 1 tree";
-            this.btnTreeNivel1.UseVisualStyleBackColor = true;
-            this.btnTreeNivel1.Click += new System.EventHandler(this.btnTreeNivel1_Click_1);
             // 
             // treeView1
             // 
@@ -76,9 +65,10 @@
             this.ClientSize = new System.Drawing.Size(600, 311);
             this.Controls.Add(this.lblContenido);
             this.Controls.Add(this.btnNivel2);
-            this.Controls.Add(this.btnTreeNivel1);
             this.Controls.Add(this.treeView1);
             this.Name = "frmCarpetaDeProveedores";
+            this.Text = "CarpetaDeProveedores";
+            this.Load += new System.EventHandler(this.frmCarpetaDeProveedores_Load_1);
             this.ResumeLayout(false);
 
         }
@@ -89,7 +79,6 @@
         private System.Windows.Forms.TreeView twCarpetasProvedores;
         private System.Windows.Forms.Label lblContenido;
         private System.Windows.Forms.Button btnNivel2;
-        private System.Windows.Forms.Button btnTreeNivel1;
         private System.Windows.Forms.TreeView treeView1;
     }
 }

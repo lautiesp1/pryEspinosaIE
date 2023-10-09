@@ -115,12 +115,11 @@ namespace pryEspinosaIE
             CargarTreeView(ruta, info.Name);
         }
 
-        private void btnTreeNivel1_Click_1(object sender, EventArgs e)
-        {
-            //una direcciòn estàtica de carpeta
-            DirectoryInfo info = new DirectoryInfo("C:\\Users\\Alumnos\\source\\repos\\pryCasaleIE\\pryCasaleIE");
+       
 
-            CargarTreeView(info.FullName, info.Name);
+        private void frmCarpetaDeProveedores_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
