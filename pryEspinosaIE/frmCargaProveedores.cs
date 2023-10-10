@@ -49,19 +49,6 @@ namespace pryEspinosaIE
             objetoLectorArchivo.Close();
         }
 
-        private void dgvDatos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            lblDatos.Text = "hizo doble clic";
-
-            txtEntidad.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtExpediente.Text = dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[0].Value.ToString();
-            cmbJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[4].Value.ToString();
-            cmbJurisdicción.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
-            txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
-            cmbLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();
-        }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
@@ -86,11 +73,21 @@ namespace pryEspinosaIE
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             dgvDatos.Rows.Clear();
+            
         }
 
         private void dgvDatos_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
+            lblDatos.Text = "hizo doble clic";
 
+            txtEntidad.Text = dgvDatos.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtApertura.Text = dgvDatos.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtExpediente.Text = dgvDatos.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtNumero.Text = dgvDatos.Rows[e.RowIndex].Cells[0].Value.ToString();
+            cmbJuzg.Text = dgvDatos.Rows[e.RowIndex].Cells[4].Value.ToString();
+            cmbJurisdicción.Text = dgvDatos.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txtDireccion.Text = dgvDatos.Rows[e.RowIndex].Cells[6].Value.ToString();
+            cmbLiquidador.Text = dgvDatos.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
 
         private void txtExpediente_TextChanged(object sender, EventArgs e)
