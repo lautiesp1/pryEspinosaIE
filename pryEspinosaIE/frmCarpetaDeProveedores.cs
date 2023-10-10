@@ -26,10 +26,10 @@ namespace pryEspinosaIE
 
             if (Directory.Exists(rutaCarpetaRaiz))
             {
-                TreeNode nodoRaiz = new TreeNode(nombreCarpeta);
-                treeView1.Nodes.Add(nodoRaiz);
-                TraerSubCarpetas(rutaCarpetaRaiz, nodoRaiz);
-                TraerArchivos(rutaCarpetaRaiz, nodoRaiz);
+                TreeNode NodoRaiz = new TreeNode("Proveedores");
+                treeView1.Nodes.Add(NodoRaiz);
+                TraerSubCarpetas(rutaCarpetaRaiz, NodoRaiz);
+                TraerArchivos(rutaCarpetaRaiz, NodoRaiz);
             }
         }
 
@@ -68,14 +68,6 @@ namespace pryEspinosaIE
 
         }
 
-      
-
-       
-        private void frmCarpetaDeProveedores_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void treeView1_NodeMouseDoubleClick_1(object sender, TreeNodeMouseClickEventArgs e)
         {
             //MessageBox.Show(e.Node.Text);
@@ -86,7 +78,7 @@ namespace pryEspinosaIE
             {
                 DirectoryInfo info = new DirectoryInfo(@"../..");
 
-                string rutaArchivo = info.FullName + "\\" + e.Node.Text;
+                string rutaArchivo = info.FullName + "\\" + e.Node.FullPath;
 
                 StreamReader lectorArchivos = new StreamReader(rutaArchivo);
 
@@ -106,7 +98,7 @@ namespace pryEspinosaIE
             }
         }
 
-        private void btnNivel2_Click_1(object sender, EventArgs e)
+        private void frmCarpetaDeProveedores_Load_1(object sender, EventArgs e)
         {
             DirectoryInfo info = new DirectoryInfo(@"../../");
 
@@ -115,9 +107,7 @@ namespace pryEspinosaIE
             CargarTreeView(ruta, info.Name);
         }
 
-       
-
-        private void frmCarpetaDeProveedores_Load_1(object sender, EventArgs e)
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
 
         }
