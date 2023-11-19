@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
+            this.btnRegistrarse = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtContraseña
@@ -81,13 +82,29 @@
             this.btnIniciarSesion.TabIndex = 5;
             this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
+            // 
+            // btnRegistrarse
+            // 
+            this.btnRegistrarse.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRegistrarse.CausesValidation = false;
+            this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRegistrarse.Location = new System.Drawing.Point(201, 230);
+            this.btnRegistrarse.Name = "btnRegistrarse";
+            this.btnRegistrarse.Size = new System.Drawing.Size(192, 46);
+            this.btnRegistrarse.TabIndex = 10;
+            this.btnRegistrarse.Text = "Registrarse";
+            this.btnRegistrarse.UseVisualStyleBackColor = false;
+            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
             // 
             // frmInicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(543, 367);
+            this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtNombreUsuario);
             this.Controls.Add(this.label2);
@@ -96,6 +113,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicioSesion";
             this.Text = "frmInicioSesion";
+            this.Load += new System.EventHandler(this.frmInicioSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +126,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnIniciarSesion;
+        private System.Windows.Forms.Button btnRegistrarse;
     }
 }
