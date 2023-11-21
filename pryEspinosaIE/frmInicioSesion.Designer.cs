@@ -39,7 +39,7 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(201, 102);
+            this.txtContraseña.Location = new System.Drawing.Point(201, 107);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(192, 20);
             this.txtContraseña.TabIndex = 9;
@@ -54,27 +54,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(37, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 16);
+            this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Contraseña:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(37, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 16);
+            this.label1.Size = new System.Drawing.Size(147, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Nombre de usuario:";
             // 
             // btnIniciarSesion
             // 
             this.btnIniciarSesion.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIniciarSesion.Location = new System.Drawing.Point(201, 170);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
@@ -88,7 +88,7 @@
             // 
             this.btnRegistrarse.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRegistrarse.CausesValidation = false;
-            this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRegistrarse.Location = new System.Drawing.Point(201, 230);
             this.btnRegistrarse.Name = "btnRegistrarse";

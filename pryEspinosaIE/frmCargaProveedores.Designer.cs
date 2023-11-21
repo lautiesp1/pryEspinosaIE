@@ -75,7 +75,7 @@
             this.dgvDatos.Location = new System.Drawing.Point(21, 218);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDatos.Size = new System.Drawing.Size(683, 187);
+            this.dgvDatos.Size = new System.Drawing.Size(746, 196);
             this.dgvDatos.TabIndex = 0;
             this.dgvDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellContentClick);
             this.dgvDatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellDoubleClick_1);
@@ -158,33 +158,36 @@
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(557, 443);
+            this.btnGrabar.BackColor = System.Drawing.Color.Linen;
+            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnGrabar.Location = new System.Drawing.Point(448, 431);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(98, 29);
+            this.btnGrabar.Size = new System.Drawing.Size(123, 41);
             this.btnGrabar.TabIndex = 9;
             this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // lblDatos
             // 
-            this.lblDatos.AutoSize = true;
+            this.lblDatos.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblDatos.Location = new System.Drawing.Point(51, 431);
             this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(35, 13);
+            this.lblDatos.Size = new System.Drawing.Size(78, 20);
             this.lblDatos.TabIndex = 10;
-            this.lblDatos.Text = "label1";
+            this.lblDatos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(443, 443);
+            this.btnLimpiar.BackColor = System.Drawing.Color.Linen;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(264, 431);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(95, 29);
+            this.btnLimpiar.Size = new System.Drawing.Size(128, 41);
             this.btnLimpiar.TabIndex = 11;
             this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // lblNumero
@@ -769,6 +772,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(875, 496);
             this.Controls.Add(this.cmbLiquidador);
             this.Controls.Add(this.cmbJurisdicción);
